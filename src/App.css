@@ -1,38 +1,159 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.button-1 {
+  transition: all 0.5s !important;
+  box-shadow: inset 0px 0px 0px #007bff;
+}
+
+.button-1:hover {
+  box-shadow: inset -150px 0px 0px #007bff;
+}
+
+.navbar-brand {
+  font-size: 1.8em;
+  font-family: 'Montserrat';
+  cursor: pointer;
+  color: #007bff !important ;
+}
+
+/* End of Navigation */
+.jumbotron {
+  margin: 0px;
+  background: black url('./images/jumbo-bg.jpg');
+  background-position: center right;
+  padding: 13em 0px 13em 0px;
+}
+.jumbotron h1 {
+  color: white;
+  font-family: 'Montserrat';
+}
+.jumbo-search {
+  background-color: white;
+  border-radius: 5px;
+}
+.jumbo-search {
+  padding: 2em;
+}
+.jumbo-search .form-label {
+  font-size: 12px;
+}
+input {
+  border-color: #007bff !important;
+}
+
+/* end of jumbotron */ 
+
+.section-1 h2, .section-2 h2, .search-results h2 {
+  text-align: center;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.section-1 .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-1 .col .container, .section-1 .col-md-3 .container {
+  height: 400px;
+  background-color: grey;
+  background-position: center;
+  background-size: cover;
+  padding: 0px;
+  border-radius: 5px;
+}
+.section-1 .col, .section-1 .col-md-3 {
+  padding-right: 2px;
+  padding-left: 2px;
+  cursor: pointer;
+}
+
+.card-info {
+  width: calc(100% - 4px);
+  background-color: white;
+  color: black;
+  position: absolute;
+  bottom: 0;
+  text-indent: 10px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.5);
+  padding: 5px 0px 5px 0px;
+  background-position: center;
+}
+.card-info h4 {
+  margin: 0px;
+  font-size: 1.3em;
+}
+
+.card-info p {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0px;
+  cursor: pointer;
+}
+
+/* End of section 1*/
+
+.section-2 {
+  margin-bottom: 500px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.section-2 .container-fluid {
+  background-color: #f1f2f8;
+  padding: 2em 0em 2em 0em;
+}
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+  max-height: 500px;
+  overflow: auto;
+}
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+.autocomplete-items div:hover {
+  /*when hovering an item:*/
+  background-color: #e9e9e9;
+}
+.autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}
+
+.search-results {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.quotes .col-md-12 {
+  border: 2px solid #007bff;
+  border-radius: 10px;
+  margin-top: 3px;
+  padding: 10px 0px 10px 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.quotes .col-md-12 .col-md-4:nth-child(-n + 2) {
+  border-right: 2px solid #007bff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.quotes button {
+  width: 150px;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.carriers .row {
+  border: 2px solid #007bff;
+  border-radius: 10px;
+  padding: 10px 0px 10px 0px;
 }
